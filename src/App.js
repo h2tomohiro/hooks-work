@@ -13,7 +13,7 @@ function App({ toDoList }) {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
+  // console.log(state)
   return {
     toDoList: state.toDoList,
   }
