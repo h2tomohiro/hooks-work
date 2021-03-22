@@ -5,9 +5,8 @@ import AddForm from './AddForm'
 import FilterToDos from './FilterToDos'
 
 const ToDoList = (props) => {
-  // const { toDoList, removeToDo, markToDo } = props
 
-  const toDoList = useSelector((state) => state.toDoList ) //same as mapStateToProps
+  const toDoList = useSelector((state) => state.toDoList) //same as mapStateToProps
   const dispatch = useDispatch()
 
   const [filterVal, setFilterVal] = useState('SHOW_ALL')
@@ -65,22 +64,5 @@ const ToDoList = (props) => {
     </>
   )
 }
-
-// const mapStateToProps = (state) => {
-//   return {
-//     toDoList: state.toDoList,
-//   }
-// }
-
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     removeToDo: (id) => {
-//       dispatch({ type: 'DELETE_TO_DO', payload: id })
-//     },
-//     markToDo: (id) => {
-//       dispatch({ type: 'DONE_TO_DO', payload: id })
-//     },
-//   }
-// }
 
 export default ToDoList
